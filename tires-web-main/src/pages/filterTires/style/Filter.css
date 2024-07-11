@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.list.active {
+  display: flex;
+}
+.wrapper {
+  width: 800px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d9d9d9;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.wrapper.active {
+  width: 450px;
+  margin: 0 20px 20px 50px;
+}
+.tab-content {
+  width: 800px;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+}
+.tab-content.active {
+  width: 440px;
+}
+.wrapper-button {
+  width: 200px;
+  height: 30px;
+}
+.wrapper-button__tires {
+  width: 100px;
+  height: 100%;
+  border: 1px solid #f79c13;
+  border-radius: 5px 0 0 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.wrapper-button__wheels {
+  width: 100px;
+  height: 100%;
+  border: 1px solid #f79c13;
+  border-radius: 0 5px 5px 0;
+  background-color: #fff;
+  cursor: pointer;
+}
+.wrapper-button__tires.active,
+.wrapper-button__wheels.active {
+  background-color: #f79c13;
+}
+.wrapper-image {
+  width: 200px;
+  height: 300px;
+  margin: 0 20px;
+}
+.wrapper-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.tires,
+.wheels {
+  width: 430px;
+  height: 370px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0;
+}
+.tires.hidden,
+.wheels.hidden {
+  display: none;
+}
+.choose-profile,
+.choose-diametr {
+  width: 130px;
+  height: 55px;
+  margin: 0 0 25px 19px;
+}
+.choose-width {
+  width: 130px;
+  height: 55px;
+  margin-bottom: 25px;
+}
+.choose-price {
+  width: 430px;
+  height: 55px;
+  margin-bottom: 25px;
+  border: 1px solid #f79c13;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.choose-price span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.choose-price__wrapper {
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.choose-price__wrapper input {
+  width: 120px;
+  height: 30px;
+  border: 0.5px solid #f79c13;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.choose-manufacturer {
+  width: 204px;
+  height: 55px;
+  border: 1px solid #f79c13;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 0 10px;
+  margin-bottom: 0 20px 20px 0;
+}
+.choose-season {
+  width: 204px;
+  height: 55px;
+  margin-bottom: 20px;
+}
+.choose-manufacturer {
+  margin-right: 20px;
+}
+.choose-width select,
+.choose-profile select,
+.choose-diametr select,
+.choose-season select {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f79c13;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  padding-left: 10px;
+}
+.choose-width select option,
+.choose-profile select option,
+.choose-diametr select option,
+.choose-season select option {
+  border: 1px solid #f79c13;
+}
+.btn-wrapper,
+.wheels__btn-wrapper {
+  width: 425px;
+}
+.btn-wrapper button,
+.wheels__btn-wrapper button {
+  width: 100%;
+  height: 55px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  background: #f79c13;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.btn-wrapper button:hover,
+.wheels__btn-wrapper button:hover {
+  background: #da870a;
+}
+.btn-wrapper button:disabled,
+.wheels__btn-wrapper button:disabled {
+  background: #6a6a6a;
+}
+.dropdown {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dropdown span {
+  display: block;
+  width: 100px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+}
+.choose-manufacturer {
+  position: relative;
+}
+.producers-group {
+  width: 950px;
+  height: 510px;
+  position: absolute;
+  background: #eee;
+  border-radius: 10px;
+  border: 1px solid #f79c13;
+  margin: 70px 0;
+  padding: 30px 60px;
+  top: 5px;
+  left: -5px;
+  z-index: 1;
+}
+.group-premium {
+  width: 100%;
+  height: 110px;
+}
+.group-medium,
+.group-cheap {
+  width: 100%;
+  height: 110px;
+  margin-top: 30px;
+}
+.group-premium__title,
+.group-medium__title,
+.group-cheap__title {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 20px;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.group-premium__title::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  height: 35px;
+  background-color: #0059c6;
+}
+.group-medium__title::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  height: 35px;
+  background-color: #ffab19;
+}
+.group-cheap__title::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  height: 35px;
+  background-color: #33b806;
+}
+.group-premium__title input,
+.group-medium__title input,
+.group-cheap__title input {
+  cursor: pointer;
+  margin: 0 5px;
+}
+.group-premium__title label,
+.group-medium__title label,
+.group-cheap__title label {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.group-premium__items,
+.group-medium__items,
+.group-cheap__items {
+  width: 100%;
+  height: 55px;
+}
+.group-premium__items ul,
+.group-medium__items ul,
+.group-cheap__items ul {
+  width: 100%;
+  height: 55px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.group-premium__items ul li,
+.group-medium__items ul li,
+.group-cheap__items ul li {
+  width: 165px;
+  display: flex;
+  justify-content: flex-start;
+}
+.group-premium__items label,
+.group-medium__items label,
+.group-cheap__items label {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 15px;
+  font-weight: 400;
+}
+.group-premium__items label input,
+.group-medium__items label input,
+.group-cheap__items label input {
+  margin-right: 10px;
+}
+.choose-manufacturer__btn {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.choose-manufacturer__btn button {
+  width: 240px;
+  height: 40px;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 4px;
+  font-size: 14px;
+  background: #f79c13;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.choose-manufacturer__btn button:hover {
+  background: #da870a;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  display: none;
+}
+
+.wheels__choose-diametr {
+  width: 204px;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  margin: 0 20px 20px 0;
+}
+.wheels__bolt-spacing {
+  width: 204px;
+  height: 55px;
+  margin-bottom: 20px;
+}
+.wheels__choose-width {
+  width: 204px;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  margin: 0 20px 20px 0;
+}
+.wheels__choose-central-bore-diameter {
+  width: 204px;
+  height: 55px;
+  margin-bottom: 20px;
+}
+.wheels__choose-diametr select,
+.wheels__bolt-spacing select,
+.wheels__choose-width select,
+.wheels__choose-central-bore-diameter select {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f79c13;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.tires-list,
+.wheels-list {
+  width: 1320px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}

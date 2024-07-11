@@ -1,0 +1,137 @@
+.cart-top {
+    text-align: left;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.cart-container {
+    display: flex;
+    padding: 20px;
+    gap: 30%;
+    font-family: Manrope;
+  }
+  
+  .cart-left {
+    margin-left: 50px;
+  }
+  
+  .cart-right {
+    border: 1px solid #CBCBCBF5;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: max-content;
+    max-height: 200px;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cart-item {
+    min-width: max-content;
+    display: flex;
+    border: 1px solid #CBCBCBF5;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  
+  .cart-item-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .cart-item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .cart-item-quantity button{
+    border: 1px solid #CBCBCBF5;
+    border-radius: 10px;
+    border-color: #F79C13;
+    background-color: #FFFFFF;
+    color: #000;
+    height: 35px;
+    width: 40px;
+  }
+  
+  .cart-item-price {
+    text-decoration: line-through;
+    color: #8F8F8F;
+    align-self: flex-end;
+    font-size: 20px;
+  }
+  
+  .cart-item-discount-price {
+    font-weight: bold;
+    color: #000;
+    align-self: flex-end;
+    font-size: 24px;
+  }
+  
+  .guaranty-frame {
+    width: 90px;
+    height: 25px;
+    position: absolute;
+    margin-left: 190px;
+    border-radius: 10px;
+    border: 1px solid #7CFF5C;
+  }
+  
+  .guaranty-text {
+    font-family: Manrope;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .cart-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-content: center;
+  }
+  
+  .cart-summary div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .order-button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .order-button {
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #F79C13;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+  }
+  

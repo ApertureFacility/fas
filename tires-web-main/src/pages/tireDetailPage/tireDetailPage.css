@@ -1,0 +1,296 @@
+.tire {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+}
+
+.tire__section {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.tire__section--left {
+  text-align: left;
+}
+
+.tire__section--right {
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  width: 335px;
+  height: 448px;
+  padding: 20px;
+}
+
+.tire__image {
+  width: 315px;
+  height: 380px;
+}
+
+.tire__add-to-cart-button {
+  border-radius: 10px;
+  width: 204px;
+  height: 56px;
+  background: #f79c13;
+  color: white;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  margin-top: 24px;
+}
+
+.tire__add-to-cart-button:hover {
+  background-color: darkorange;
+}
+
+.tire__characteristic {
+  font-family: 'Inter Regular', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.tire__specification-title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+  font-family: "Inter", sans-serif;
+}
+
+.tire__specifications {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 538px;
+  height: 552px;
+  margin-top: 48px;
+}
+
+.tire__price {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #f79c13;
+}
+
+.tire__name {
+  margin-bottom: 12px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
+}
+
+.tire__rating {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+}
+
+.tire__block {
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  width: 540px;
+  height: 448px;
+  display: flex;
+}
+
+.tire__thumbnails {
+  width: 99px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.tire__thumbnail {
+  width: 80px;
+  height: 97px;
+  border: solid gray 1px;
+  border-radius: 8px;
+  margin: 5px 0px;
+}
+.tire__thumbnail-box {
+  width: 80px;
+  height: 97px;
+ 
+  border-radius: 8px;
+}
+
+.tire__sold {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-decoration: line-through;
+  color: #8f8f8f;
+  margin-left: 30px;
+}
+
+.tire__feedbacks {
+  display: flex;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.tire__feedbacks img {
+  margin-right: 8px;
+}
+
+.tire__prices {
+  display: flex;
+  align-items: baseline;
+}
+
+.tire__specification-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: 'Inter Regular', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.tire__section-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.36px;
+  text-align: left;
+  color: #F79C13;
+  margin-top: 32px;
+  margin-left: 37px;
+  padding: 10px;
+}
+
+.tire__section-content {
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-left: 37px;
+  color: #000000;
+  position: relative;
+  padding-left: 20px;
+}
+
+.tire__section-content::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.tire__section--right .tire__section-title:first-of-type {
+  margin-top: 0;
+}
+
+.tire__section--right .tire__section-content:first-of-type {
+  margin-top: 13px;
+}
+
+.tire__section--right .tire__section-content:nth-of-type(2) {
+  margin-top: 8px;
+}
+
+.tire__section--right .tire__section-title + .tire__section-title {
+  margin-top: 40px;
+}
+
+.tire__section--center {
+  text-align: left;
+}
+
+.tireunder {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 104px;
+}
+
+.tirerightBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 202px); 
+  gap: 10px;
+  margin-left: 120px;
+}
+
+.tirebox {
+  width: 202px;
+  border: solid gray 1px;
+  box-sizing: border-box; 
+  border-radius: 8px;
+}
+
+.tire__buy-button{
+  border-radius: 10px;
+  width: 168px;
+  height: 35px;
+  background: #f79c13;
+  color: white;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  margin-top: 24px;
+  font-family: Inter;line-height: 19.36px;
+}
+
+.ll {
+  display: flex;
+  gap: 20px;
+}
+
+.review-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-container__button {
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.review-container__text {
+  margin-right: 20px;
+  font-size: 20px;
+  color:#000000;
+  font-family: Inter;
+font-size: 20px;
+font-weight: 600;
+line-height: 24.2px;
+text-align: left;
+
+}
+
+.like_img,.dislike_img{
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+.rating-container {
+  display: flex;
+  flex-direction: column;
+padding: 20px;
+  height: 100%;
+  justify-content: space-around;
+}

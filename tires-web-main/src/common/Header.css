@@ -1,0 +1,7 @@
+.menu-container {
+    top: 10px;
+    left: 47px;
+    gap: 56px;
+    display: flex;
+    margin-bottom: 20px;  
+}

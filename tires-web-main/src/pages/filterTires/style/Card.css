@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.card {
+  width: 300px;
+  height: 380px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  border: 1px solid #cbcbcbf5;
+  padding: 0;
+}
+.card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.card__image {
+  width: 260px;
+  height: 180px;
+  align-self: center;
+  margin: 10px 20px 0;
+  position: relative;
+}
+.card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.card__image__guaranty-frame {
+  width: 90px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  border: 1px solid #7cff5c;
+}
+.card__image__guaranty-frame p {
+  font-family: Manrope;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+}
+.card__image__discount-frame {
+  width: 40px;
+  height: 15px;
+  border-radius: 5px;
+  border: 0.5px solid #f79c13;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.card__image__discount-frame p {
+  width: 40px;
+  height: 15px;
+  font-family: Manrope;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 15px;
+  text-align: center;
+}
+.card__info {
+  width: 260px;
+  height: 30px;
+  margin: 10px 20px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.card__price {
+  width: 260px;
+  height: 30px;
+  margin: 0 20px 15px;
+  display: flex;
+}
+.card__price__with-discount {
+  font-family: Manrope;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  color: #000000;
+  margin-right: 10px;
+}
+.card__price__before-discount {
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  color: #8f8f8f;
+  text-decoration-line: line-through;
+}
+.card__reviews {
+  width: 260px;
+  height: 20px;
+  margin: 0 20px 10px;
+  display: flex;
+}
+.card__button {
+  width: 260px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #f79c13;
+  color: #fff;
+  border: none;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 600;
+}

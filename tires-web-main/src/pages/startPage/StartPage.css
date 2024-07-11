@@ -1,0 +1,6 @@
+.nav-links {
+    text-align: left;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}

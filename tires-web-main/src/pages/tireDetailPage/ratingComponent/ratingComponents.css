@@ -1,0 +1,60 @@
+
+  .feedback__header,
+  .feedback__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .feedback__user {
+    font-weight: bold;
+  }
+  
+  .feedback__date,
+  .feedback__likes,
+  .feedback__dislikes {
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  .feedback__text {
+    margin: 16px 0;
+  }
+  
+  .feedback__likes,
+  .feedback__dislikes {
+    display: flex;
+    align-items: center;
+  }
+  
+  .feedback__icon {
+    margin-right: 8px;
+  }
+  
+  .feedback__ratings {
+    width: 315px;
+    height: 232px;
+    padding: 16px;
+    border: 2px solid #FFD700; /* Желтая граница */
+    border-radius: 8px;
+    background: #fff;
+  }
+  
+  .feedback__rating-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feedback__extra-star {
+    margin-top: 16px;
+  }
+  
+  .feedback__one-star {
+    display: flex;
+    align-items: center;
+  }
+  
+  .feedback__one-star img {
+    margin-right: 8px;
+  }
+  
