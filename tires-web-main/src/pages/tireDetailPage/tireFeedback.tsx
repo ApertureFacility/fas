@@ -33,7 +33,7 @@ const Feedback: React.FC<FeedbackProps> = ({ user, date, text, likes, dislikes }
         <Rating label="Сухой асфальт" stars={5} />
         <div className="feedback__extra-star">
           <div className="feedback__one-star">
-            <img src='/public/star.svg' alt="Extra star" /> 5.0
+            <img src='./ratingComponent/star.svg' alt="Extra star" /> 5.0
           </div>
         </div>
       </div>
